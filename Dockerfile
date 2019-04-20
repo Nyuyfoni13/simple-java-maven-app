@@ -1,4 +1,4 @@
-FROM openjdk:8u212-jre
+FROM openjdk:7u211-jdk
 LABEL owner="loki"
 LABEL desc="testingmavenbuild"
 ARG version="3.6.1"
