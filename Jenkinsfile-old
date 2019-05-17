@@ -1,8 +1,10 @@
 node('maven'){
+
     def maven361home = tool name: 'maven361', type: 'maven'
     stage('checkout') {
         git branch: 'Feature123', url: 'https://github.com/Nyuyfoni13/simple-java-maven-app.git
     }
+    
     stage('building'){    
         sh "$maven361home/mvn/bin clean package"
     }
